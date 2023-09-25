@@ -1,0 +1,482 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+header{
+    background-image: url(../images/item_4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-block-size: 100vh;
+    position: relative;
+    z-index: 0;
+}
+header::after{
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;    
+    background-color: #15141a;
+    opacity: .7;
+    z-index: -1;
+}
+
+.nav-link{
+    color: #fffefe;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    padding: 0px !important;
+}
+.nav-item{
+    margin-left: 30px;
+}
+.nav-link:hover{
+    color: #FFF;
+}
+.nav-link::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 3px;
+    background-color: #008ed6;
+    transition: .4s all ease-in-out;
+}
+.nav-link::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 3px;
+    background-color: #008ed6;
+    transition: .4s all ease-in-out;
+}
+
+.nav-link:hover::before{
+    width: 48%;
+}
+
+.nav-link:hover::after{
+    width: 48%;
+}
+
+.banner{
+    align-items: center;
+    min-height: 90vh;
+}
+.banner h4{
+    color: #008ed6;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.banner h1{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+    margin: 15px 0 20px 0;
+}
+.banner p{
+    color: #999999;
+    margin-bottom: 50px;
+    font-weight: 400;
+}
+
+.btn_download{
+    background: #008ed6;
+    color: #fff;
+    padding: 0;
+    padding: 15px 20px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #008ed6;    
+}
+.btn_view{
+    background: transparent;
+    border: 1px solid #4e4e54;
+    color: #fff;
+    padding: 0;
+    padding: 15px 22px;
+    margin-left: 15px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.btn_download:hover{
+    color: #fff;
+    border-color: #4e4e54;
+}
+
+.btn_view:hover{
+    color: #fff;
+    background-color: #008ed6;
+    border-color: #008ed6;
+}
+
+.phone{
+    position: absolute;
+    bottom: 0;
+    right: 110px;
+    width: 35%;
+}
+
+.feature{
+    padding: 70px 0;
+}
+
+.section_title{
+    text-align: center;
+}
+.section_title h4{
+    color: #008ed6;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.section_title h1{
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.section_title span{
+    display: block;
+    position: relative;
+    height: 3px;
+    width: 50px;
+    background: transparent;
+    margin: auto;
+    margin-top: 20px;
+    transition: .4s all ease-in-out;
+}
+.section_title span::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 3px;
+    background-color: #008ed6;
+    transition: .4s all ease-in-out;
+}
+.section_title span::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 3px;
+    background-color: #008ed6;
+    transition: .4s all ease-in-out;
+}
+
+.feature:hover .section_title span::before, .detail_section:hover .section_title span::before, .customize_section:hover .section_title span::before, .testimonial_section:hover .section_title span::before, .pricing_section:hover .section_title span::before, .contact_us:hover .section_title span::before{
+
+    width: 48%;
+}
+
+.feature:hover .section_title span::after, .detail_section:hover .section_title span::after, .customize_section:hover .section_title span::after, .testimonial_section:hover .section_title span::after, .pricing_section:hover .section_title span::after, .contact_us:hover .section_title span::after{
+
+    width: 48%;
+}
+
+.feature_item{
+    text-align: center;
+}
+.icon_box{
+    height: 100px;
+    width: 100px;
+    border: 1px solid #e4e4e4;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    color: #008ed6;
+    font-size: 35px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.feature_item h2{
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+.feature_item p{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+hr{
+    color: #ededed;
+}
+
+.detail_section{
+
+}
+.detail_section .section_title, .customize_section .section_title{
+    text-align: left;
+    margin-top: 100px;
+}
+.detail_section .section_title span, .customize_section .section_title span{
+    margin: 20px 0;
+}
+.phone_img{
+
+}
+.detail_section p{
+    margin-bottom: 20px;
+    color: #b9b9b9;
+}
+.detail_section ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.detail_section ul li{
+    color: #353535;
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.detail_section ul li .icon_list{
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    color: #44ace1;
+}
+
+.customize_section{
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.testimonial_section{
+    background-image: url(../images/price_n_plan.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-block-size: 75vh;
+    padding: 70px 0;
+    position: relative;
+    z-index: 0;
+}
+.testimonial_section::after{
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;    
+    background-color: #15141a;
+    opacity: .7;
+    z-index: -1;
+}
+.testimonial_section .section_title h1{
+    color: #ffffff;
+}
+.testimonial_section .section_title span, .pricing_section .section_title span, .contact_us .section_title span{
+    margin: 20px auto;
+}
+.testimonial_section p{
+    
+color: #FFF;
+    
+font-style: italic;
+}
+
+.client{
+    display: flex;
+    margin-top: 20px;
+}
+.client_img{
+    width: 50px;
+    margin-right: 15px;
+}
+.client_info{
+    
+}
+.client_info p{
+    font-style: normal;
+}
+.client_info h5{
+    color: #FFF;
+    font-size: 16px;
+}
+
+.theme_download{
+    padding: 50px 0;
+    background-color: #15141a;
+}
+.theme_download h1{
+    font-size: 32px;
+    color: #FFF;
+}
+
+.theme_items{
+    align-items: center;
+}
+.theme_download .btn_view{
+    margin-right: 7px;
+}
+
+.pricing_section{
+    padding: 70px 0;
+}
+
+.price_box{
+    margin-top: 20px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    padding: 30px 0px;
+}
+.price_box h2{
+    padding-bottom: 30px;
+    transition: .4s all ease-in-out;     
+}
+
+.price{
+    padding: 15px;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    transition: .4s all ease-in-out;     
+}
+.price h1{
+
+}
+.price h1 sup{
+    font-size: 25px;
+    font-weight: 700;
+}
+.price p{
+    padding: 0 !important;
+}
+
+.price_box p{
+    padding: 20px 17px;
+}
+.price_box .btn_view{
+    color: #008ed6;
+    transition: .4s all ease-in-out;
+}
+.price_box .btn_view:hover{
+    color: #FFF;
+}
+
+.price_box:hover h2{
+    color: #008ed6;
+}
+
+.price_box:hover .price{
+    background-color: #008ed6;
+    color: #fafafa;
+}
+
+.contact_us{
+    background-color: #ededed;
+    padding: 70px 0;
+    position: relative;
+    padding-bottom: 320px;
+}
+
+.info{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+.info i{
+    color: #008ed6;
+    width: 40px;
+    height: 40px;
+
+
+}
+
+.contact_form{
+    background: #15141a;
+    padding: 50px 30px;
+    position: absolute;
+    width: 50%;
+    bottom: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.contact_form form{
+
+}
+.contact_form form input{
+    background: transparent;
+    border: 1px solid #444348;
+    border-radius: 3px;
+}
+.contact_form form textarea{
+    background: transparent;
+    border: 1px solid #444348;
+    border-radius: 3px;
+}
+.contact_form form input[type='submit']{
+    background: #008ed6;
+    border-color: #008ed6;
+    color: #ffffff;
+    padding: 0;
+    padding: 10px 30px;
+    display: block;
+    margin-left: auto;
+}
+
+footer{
+    background: #15141a;
+    padding: 50px 0;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+footer ul li{
+    width: 30px;
+    height: 30px;
+    list-style: none;
+    margin-right: 15px;
+    margin-left: 15px;
+    color: #262528;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  
+}
+footer ul li a{
+    color: #444348;
+}
+footer ul li .twitter_color{
+    color: #008ed6;
+}
+footer ul li a i{
+    
+}
+
+footer h6{
+    color: #3d3c42;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
